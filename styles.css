@@ -34,8 +34,14 @@ main {
 .video-container, .image-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    width: 30%;
+    margin-top: 80px;
+    /* max-width: 300px; */
 }
 
 .intro-imgs-row h1 {
@@ -137,6 +143,7 @@ footer a {
 
     .video-container, .image-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .img-right, .img-left {
@@ -153,12 +160,17 @@ footer a {
     }
 
     .intro-imgs img {
-        width: 100%;
+        width: 80%;
         margin: 10px 0;
     }
 
+    .image-container img {
+        width: 40%;
+        max-width: 200px;
+    }
+
     .feature {
-        max-width: 100%;
+        max-width: 70%;
         margin: 1em 0;
     }
 
