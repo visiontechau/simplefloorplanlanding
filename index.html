@@ -6,15 +6,13 @@
     <title>Simplefloorplan</title>
     <link rel="stylesheet" href="styles.css" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16620671136">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16620671136');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16620671136"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16620671136');
+    </script>
   </head>
   <body>
     <header>
@@ -30,80 +28,56 @@
         <img src="logo.png" alt="Simplefloorplan Logo" class="logo" />
         <h1>Simplefloorplan</h1>
         <!-- Video player -->
-        <div style="display: flex; justify-content: center; margin: 50px 0;">
-            <video width="300" controls style="margin-right: 150px;" autoplay>
-                <source src="intro.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <video width="300" controls autoplay>
-                <source src="modelplay.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-
-              <div style="display: flex; flex-direction: column;">
-                <img width="200" src="pro scan processed.PNG" alt="Devices" class="img-right"/>
-                <img width="200" src="pro scan.JPG" alt="Devices" class="img-right"/>
-                
-            </div>
+        <div class="video-container">
+          <video width="300" controls autoplay>
+            <source src="intro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <video width="300" controls autoplay>
+            <source src="modelplay.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="image-container">
+          <img src="pro scan processed.PNG" alt="Devices" class="img-right" />
+          <img src="pro scan.JPG" alt="Devices" class="img-right" />
         </div>
         <div class="intro-imgs">
-         <div class="intro-imgs-row">
-            <h1>
-                Spatial & intelligent room scanning app for interior & architectural
-                design.
-              </h1>
-              <img src="easy capture room.png" alt="Devices" class="img-right"/>
-         </div>
-
-         <div class="intro-imgs-row">
-            <img
-              src="generate instant model.png"
-              alt="Devices"
-              class="img-left"
-            />
+          <div class="intro-imgs-row">
+            <h1>Spatial & intelligent room scanning app for interior & architectural design.</h1>
+            <img src="easy capture room.png" alt="Devices" class="img-right" />
+          </div>
+          <div class="intro-imgs-row">
+            <img src="generate instant model.png" alt="Devices" class="img-left" />
             <h1>Your iPhone is your professional scanning & designing tool</h1>
-         </div>
-
+          </div>
           <div class="intro-imgs-row">
             <h1>Generate instant 2D floorplan from scanned result</h1>
-          <img src="2d floorplan get.png" alt="Devices" class="img-right"/>
+            <img src="2d floorplan get.png" alt="Devices" class="img-right" />
           </div>
-
-         <div class="intro-imgs-row">
-            <img src="furnitures high res detect & replacement.png" alt="Devices" class="img-left"/>
-            <h1 class="img-left">High Resolution furniture models auto placed</h1>
-         </div>
-
           <div class="intro-imgs-row">
-           
-            <h1>Manage your rooms in one place, across multiple devices.</h1>
-            <img src="manage rooms in single place.png" alt="Devices" class="img-right"/>
-          
+            <img src="furnitures high res detect & replacement.png" alt="Devices" class="img-left" />
+            <h1 class="img-left">High Resolution furniture models auto placed</h1>
           </div>
-
+          <div class="intro-imgs-row">
+            <h1>Manage your rooms in one place, across multiple devices.</h1>
+            <img src="manage rooms in single place.png" alt="Devices" class="img-right" />
+          </div>
           <div class="intro-imgs-row" style="margin-bottom: 80px;">
-            <img src="room stats.png" alt="Devices" class="img-left"/>
+            <img src="room stats.png" alt="Devices" class="img-left" />
             <h1>Access your room stats, know exactly how many materials you need</h1>
-    
           </div>
         </div>
-
         <h1 style="margin-top: 20px; font-size: 40px;">Available on iOS and coming soon to visionOS.</h1>
       </section>
       <section class="features" style="color: white;">
         <div class="feature">
-          <!-- <img src="devices.png" alt="Devices" /> -->
           <h2>Scan your room the easiest way</h2>
-          <p>
-            Simplefloorplan provides an incredibly fast scanning experience that
-            utilizes your device’s LiDAR sensor with the high-end processor.
-          </p>
+          <p>Simplefloorplan provides an incredibly fast scanning experience that utilizes your device’s LiDAR sensor with the high-end processor.</p>
         </div>
         <div class="feature">
           <h2>Request Pro Floorplan</h2>
-          <p>
-            Simply uploading your scanned result to our cloud, our professional team will generate a high quality 2D floorplan for you.
-          </p>
+          <p>Simply uploading your scanned result to our cloud, our professional team will generate a high quality 2D floorplan for you.</p>
         </div>
         <div class="feature">
           <h2>Export/Share your scanned result</h2>

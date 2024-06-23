@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: #fff; */
     background-color: white;
 }
 
@@ -26,11 +25,17 @@ nav a {
 
 main {
     text-align: center;
-    /* padding: 2em; */
 }
 
 .hero {
     margin: 2em 0;
+}
+
+.video-container, .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .intro-imgs-row h1 {
@@ -57,15 +62,13 @@ main {
 .intro-imgs img {
     width: 350px;
     border-radius: 15px;
-    /* margin: 30px; */
 }
 
-.img-right{
+.img-right {
     margin-left: 120px;
-
 }
 
-.img-left{
+.img-left {
     margin-right: 120px;
 }
 
@@ -74,9 +77,8 @@ main {
     justify-content: center;
     background-color: rgb(246, 236, 236);
     padding-top: 80px;
+    flex-wrap: wrap;
 }
-
-
 
 .logo {
     width: 100px;
@@ -121,4 +123,50 @@ footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 1em;
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+    header {
+        padding: 1em;
+    }
+
+    .download-button {
+        margin: 1rem 0;
+    }
+
+    .video-container, .image-container {
+        flex-direction: column;
+    }
+
+    .img-right, .img-left {
+        margin: 20px 0;
+    }
+
+    .intro-imgs-row h1 {
+        margin: 2em 0;
+        padding-top: 50px;
+    }
+
+    .intro-imgs-row {
+        padding-top: 40px;
+    }
+
+    .intro-imgs img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .feature {
+        max-width: 100%;
+        margin: 1em 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
 }
